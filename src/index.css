@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+body {
+    font-family: "Google Sans Flex", sans-serif;
+}
+
+@theme inline {
+    --color-light-blue: #9CC6DB;
+    --color-beige: #FCF6D9;
+    --color-rust: #CF4B00;
+    --color-light-brown: #DDBA7D;
+    --color-teal-green: #007E6E;
+    --color-warm-green: #73AF6F;
+    --color-dark-blue: #001BB7;
+    --color-navy-blue: #111B3F;
+
+
+}
+
