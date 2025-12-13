@@ -18,6 +18,7 @@ const persistConfig = {
     storage,
 };
 
+// Reducers
 const rootReducer = combineReducers({
     createCard: createCardReducer,
     cards: cardsReducer,

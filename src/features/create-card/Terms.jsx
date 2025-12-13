@@ -57,19 +57,29 @@ const Terms = ({ term, index }) => {
     }
 
     return (
-        <div className='flex gap-5'>
+        <div className='flex flex-col lg:flex-row gap-5'>
+
+            {/* Term Index */}
             <div className='pr-2'>
 
                 <span className='bg-dark-blue w-7 h-7 rounded-full font-bold text-white grid place-items-center'>{index + 1}</span>
             </div>
-            <div className='grid grid-cols-10 gap-x-4 w-full'>
-                <div className='col-span-3'>
+
+
+            <div className='grid grid-cols-10 gap-y-4 gap-x-4 w-full'>
+
+                {/* Term name */}
+                <div className='col-span-full lg:col-span-3'>
                     <Input ref={termRef} label="Term*" name={`term-${index + 1}`} value={term?.name} onChange={(e) => handleChange("name", e.target.value)} placeholder="Enter a term" />
                 </div>
-                <div className='col-span-5'>
+
+                {/* Term Definition */}
+                <div className='col-span-full lg:col-span-5'>
                     <Input as="textarea" label="Definition*" name={`term-definition-${index + 1}`} value={term?.definition} onChange={(e) => handleChange("definition", e.target.value)} placeholder="Write the definition here" className="resize-none" rows={3} />
                 </div>
-                <div className='col-span-2'>
+
+                {/* Term Image */}
+                <div className='col-span-full lg:col-span-2'>
                     <div className='flex items-center justify-between'>
 
                         <div className='text-sm mb-1 text-zinc-500 font-[550]'>Image (Optional)</div>
@@ -81,6 +91,8 @@ const Terms = ({ term, index }) => {
                         }
                     </div>
                     {
+
+                        // Showing the image, if it is uploaded
                         term.termImg ? (
                             <div className='relative group cursor-pointer w-full bg-zinc-100 rounded-md h-[78px] overflow-hidden'>
                                 <img
@@ -97,6 +109,8 @@ const Terms = ({ term, index }) => {
                                 </label>
                             </div>
                         ) : (
+
+                            // Otherwise showing a label to upload the image
                             <label htmlFor={`term-img-${index + 1}`} className='border border-zinc-300 rounded-md p-2 cursor-pointer bg-zinc-50 hover:ring-2 hover:ring-blue-900/20 hover:border-blue-400 text-zinc-600 hover:bg-blue-50/70 flex items-center justify-center gap-2'>
                                 <span className='text-lg font-semibold'><RiUpload2Line /></span>
                                 <p className='text-sm'>Upload image</p>
@@ -108,7 +122,8 @@ const Terms = ({ term, index }) => {
                 </div>
             </div>
 
-            <div className='flex flex-col gap-2 self-center pl-1'>
+            {/* Buttons for Edit and Delete a Term */}
+            <div className='flex lg:flex-col gap-4 lg:gap-2 self-end lg:self-center pl-1'>
                 <span onClick={editTerm} className={`text-blue-700 cursor-pointer hover:bg-blue-100 text-[22px]  rounded-md  flex items-center justify-center p-2`}><RiEdit2Fill /></span>
                 <span onClick={() => deleteTerm(index)} className={`${index > 0 ? "text-red-800 cursor-pointer hover:bg-red-100" : "text-zinc-300 cursor-not-allowed"} text-[22px]  rounded-md  flex items-center justify-center p-2`}><RiDeleteBinFill /></span>
             </div>

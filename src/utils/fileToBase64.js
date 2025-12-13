@@ -4,4 +4,5 @@ export const fileToBase64 = (file) =>
         reader.readAsDataURL(file)
         reader.onload = () => resolve(reader.result)
         reader.onerror = reject
-    })
+    }
+)

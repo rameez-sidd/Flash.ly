@@ -1,11 +1,12 @@
-import React from 'react'
 import { MdInfoOutline } from 'react-icons/md';
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom';
+import Flashcard from './Flashcard';
 
 const MyFlashcards = () => {
-    const cards = useSelector((state) => state.cards);
+    const cards = useSelector((state) => state.cards);    
 
+    // If cards not found returning an Error Message
     if (!cards) {
         return (
             <div className='grid place-items-center h-32'>
@@ -28,8 +29,12 @@ const MyFlashcards = () => {
                         </div>
                     </div>
                 ) : (
-                    <div>
-                        Hahahaha
+                    <div className='grid xs:place-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-4 sm:gap-4 lg:gap-5 xl:gap-8'>
+                        {
+                            cards.map((card) => (
+                                <Flashcard card={card} key={card.id}/>
+                            ))
+                        }
                     </div>
                 )
             }
