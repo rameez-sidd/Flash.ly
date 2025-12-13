@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const Flashcard = ({ card }) => {
 
     return (
-        <div className='bg-white rounded-md max-sm:max-w-[400px] shadow-sm p-5'>
+        <div className='bg-white rounded-md xs:w-[400px] min-h-[200px] relative xs:mx-auto sm:w-full shadow-sm p-5'>
             <div className='flex items-center gap-4'>
 
                 {/* Cover Image */}
@@ -33,7 +33,7 @@ const Flashcard = ({ card }) => {
             </div>
 
             {/* View Link */}
-            <Link to={`/my-flashcards/${card.id}`} className='flex items-center gap-2 font-semibold text-blue-800 cursor-pointer hover:bg-blue-100/70 hover:px-2 transition-all duration-200 ease-out w-fit p-1 rounded-md mt-4 text-sm '>
+            <Link to={`/my-flashcards/${card.id}`} className='flex items-center gap-2 font-semibold text-blue-800 cursor-pointer hover:bg-blue-100/70 hover:px-2 transition-all duration-200 ease-out w-fit py-1 rounded-md text-sm absolute bottom-5 left-5'>
                 <span className='text-xs'>View Card</span>
                 <span><IoMdArrowForward /></span>
             </Link>

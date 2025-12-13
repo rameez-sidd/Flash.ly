@@ -29,7 +29,7 @@ const MyFlashcards = () => {
                         </div>
                     </div>
                 ) : (
-                    <div className='grid xs:place-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-4 sm:gap-4 lg:gap-5 xl:gap-8'>
+                    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-4 sm:gap-4 lg:gap-5 xl:gap-8'>
                         {
                             cards.map((card) => (
                                 <Flashcard card={card} key={card.id}/>
