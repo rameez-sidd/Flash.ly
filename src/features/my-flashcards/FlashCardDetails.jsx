@@ -165,7 +165,7 @@ const FlashCardDetails = () => {
                 </div>
 
                 {/* Term content */}
-                <div className='bg-white shadow-sm rounded-sm p-4 text-sm text-justify'>
+                <div className='bg-white shadow-sm rounded-sm p-4 text-sm text-justify w-full'>
 
                     {/* Term Image */}
                     <div className='w-full sm:w-[300px] sm:h-auto sm:float-right sm:ml-5 mb-4 sm:mb-2 rounded-md flex justify-center overflow-hidden'>
