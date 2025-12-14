@@ -64,4 +64,36 @@ npm install
 
 # Start the development server
 npm run dev
+```
+---
+
+## 🧠 How It Works
+
+- Flashcards are grouped and stored using Redux slices.
+- Data persists across sessions using local storage via Redux Persist.
+- Images are validated (≤250KB) and stored in Base64 format.
+- Each flashcard group is assigned a unique UUID.
+- Users can export flashcards as PDFs or share them via supported platforms.
+
+---
+
+## 🎯 Purpose
+
+This project was built as a capstone project to demonstrate practical skills in modern frontend development, including component-based architecture, state management, routing, and third-party library integration. It focuses on solving a real learning problem through a clean and user-friendly interface.
+
+---
+
+## 📄 License
+
+This project is open-source and available under the MIT License.
+
+---
+
+## 👤 Author
+
+Rameez Siddiqui
+GitHub: [@rameez-sidd](https://github.com/rameez-sidd/)
+LinkedIn: [@rameez-siddiqui](https://www.linkedin.com/in/rameez-siddiqui/)
+
+
 
