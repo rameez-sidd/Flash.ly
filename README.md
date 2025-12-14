@@ -92,7 +92,9 @@ This project is open-source and available under the MIT License.
 ## 👤 Author
 
 Rameez Siddiqui
+
 GitHub: [@rameez-sidd](https://github.com/rameez-sidd/)
+
 LinkedIn: [@rameez-siddiqui](https://www.linkedin.com/in/rameez-siddiqui/)
 
 
