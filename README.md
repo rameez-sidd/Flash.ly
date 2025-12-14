@@ -6,7 +6,6 @@ Flash.ly is a modern, responsive flashcard generator built using **React** and *
 📦 **GitHub Repo:** https://github.com/rameez-sidd/Flash.ly
 
 ---
-
 ## ✨ Features
 
 - 📝 Create flashcard groups with title, description, and cover image
@@ -46,7 +45,7 @@ Flash.ly/
 ├── public/
 ├── index.html
 └── package.json
-
+```
 ---
 
 ## 🚀 Getting Started
