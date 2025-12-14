@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="public/images/logo.png" alt="Flash.ly Banner" width="100%" />
+</p>
+
 # 📚 Flash.ly — Flashcard Generator Web App
 
 Flash.ly is a modern, responsive flashcard generator built using **React** and **Vite**. It allows users to create, manage, study, and export flashcards in a simple and intuitive way. The app is designed to make learning more efficient by bringing traditional flashcards into a digital, shareable format.
