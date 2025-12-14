@@ -1,16 +1,52 @@
-# React + Vite
+# 📚 Flash.ly — Flashcard Generator Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Flash.ly is a modern, responsive flashcard generator built using **React** and **Vite**. It allows users to create, manage, study, and export flashcards in a simple and intuitive way. The app is designed to make learning more efficient by bringing traditional flashcards into a digital, shareable format.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** https://flashly-beta.vercel.app  
+📦 **GitHub Repo:** https://github.com/rameez-sidd/Flash.ly
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 📝 Create flashcard groups with title, description, and cover image
+- 📖 Add multiple terms with definitions and optional images
+- 🔄 Flip and navigate through flashcards while studying
+- 💾 Persistent storage using Redux Persist (data saved in browser)
+- 📤 Export flashcards as printable PDFs
+- 🔗 Share flashcards across social platforms
+- 📱 Fully responsive design for mobile and desktop
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- **Frontend:** React 19, Vite
+- **State Management:** Redux Toolkit, Redux Persist
+- **Routing:** React Router
+- **Styling:** Tailwind CSS
+- **PDF Export:** jsPDF
+- **Utilities:** UUID, Base64 image handling
+- **Deployment:** Vercel
+
+---
+
+## 📂 Project Structure
+
+```txt
+Flash.ly/
+├── src/
+│   ├── components/     # Reusable UI components
+│   ├── pages/          # Application pages (Create, View, Study)
+│   ├── redux/          # Redux slices and store configuration
+│   ├── assets/         # Images and static assets
+│   ├── utils/          # Helper functions
+│   ├── App.jsx
+│   └── main.jsx
+├── public/
+├── index.html
+└── package.json
+
+---
+
+## 🚀 Getting Started
