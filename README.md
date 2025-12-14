@@ -35,12 +35,14 @@ Flash.ly is a modern, responsive flashcard generator built using **React** and *
 ```txt
 Flash.ly/
 ├── src/
-│   ├── components/     # Reusable UI components
-│   ├── pages/          # Application pages (Create, View, Study)
-│   ├── redux/          # Redux slices and store configuration
-│   ├── assets/         # Images and static assets
-│   ├── utils/          # Helper functions
-│   ├── App.jsx
+│   ├── features/       # Feature-based UI components and logic
+│   ├── layouts/        # Page-level layouts
+│   ├── state/          # Redux slices and store configuration
+│   ├── shared/         # Shared components and files
+│   ├── utils/          # Utility and helper functions   
+|   ├── AppRoutes.jsx   # Centralized route definitions
+|   ├── App.jsx  
+|   ├── index.css
 │   └── main.jsx
 ├── public/
 ├── index.html
