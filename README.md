@@ -50,3 +50,19 @@ Flash.ly/
 ---
 
 ## 🚀 Getting Started
+
+Follow these steps to run the project locally:
+
+```bash
+# Clone the repository
+git clone https://github.com/rameez-sidd/Flash.ly.git
+
+# Navigate into the project directory
+cd Flash.ly
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+
