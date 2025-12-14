@@ -1,1 +1,1 @@
-export const BASE_URL="http://localhost:5174"
+export const BASE_URL="https://flashly-beta.vercel.app"
