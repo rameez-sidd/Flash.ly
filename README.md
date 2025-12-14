@@ -91,7 +91,7 @@ This project is open-source and available under the MIT License.
 
 ## 👤 Author
 
-Rameez Siddiqui
+**Rameez Siddiqui**
 
 GitHub: [@rameez-sidd](https://github.com/rameez-sidd/)
 
